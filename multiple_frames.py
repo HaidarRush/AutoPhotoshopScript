@@ -42,10 +42,10 @@ path_store = ""
 path_images = ""
 
 # Path to frame
-path_frame = "C:\Users\Haidar\Desktop\Mockups that we like\Templates\PSD"
+path_frame = "C:\Users\Desktop\Mockups that we like\Templates\PSD"
 
 #need to find path to temp files on photoshop. this can be found when opening up a temp file in a frame and seeing where it is stored
-path_temp = "C:\Users\Haidar\AppData\Local\Temp"
+path_temp = "C:\Users\AppData\Local\Temp"
 
 
 # Opening photshop application
@@ -146,69 +146,69 @@ for i in range(0, COUNTER_IMAGE):
     change_image.save(rf'Done\Product{i - 12}\final_2.jpg')
 
     ################################################### Frame 3 ##########################################
-    app.load(r'C:\Users\Haidar\Desktop\Mockups that we like\Templates\PSD\11-Nook-11x14.psd')
-    app.load(rf'C:\Users\Haidar\Desktop\Original_images\Poster-{i}.jpg')  # Will open up picture in photoshop
+    app.load(r'C:\Users\Desktop\Mockups that we like\Templates\PSD\11-Nook-11x14.psd')
+    app.load(rf'C:\Users\Desktop\Original_images\Poster-{i}.jpg')  # Will open up picture in photoshop
     doc4 = app.Application.ActiveDocument  # Make sure this tab is the active tab
     # doc.ResizeImage(1052,1447,72)
     doc4.ResizeImage(881, 1231, 300)
     layer_image = doc4.ArtLayers['Background']  # Select background layer
     layer_image.Copy()  # Copy
-    app.load(r'C:\Users\Haidar\AppData\Local\Temp\Rectangle 12.psb')  # Open up frame
+    app.load(r'C:\Users\AppData\Local\Temp\Rectangle 12.psb')  # Open up frame
     doc5 = app.Application.ActiveDocument
     doc5.Paste()
     # pasting onto the template
     pyautogui.hotkey('ctrl', 's')
-    app.load(r'C:\Users\Haidar\Desktop\Mockups that we like\Templates\PSD\11-Nook-11x14.psd')
+    app.load(r'C:\Users\Desktop\Mockups that we like\Templates\PSD\11-Nook-11x14.psd')
 
     options = ps.JPEGSaveOptions(quality=5)
     # # save to jpg
-    jpg = r'C:\Users\Haidar\Desktop\Python projects\Esty_Done_Clean'
+    jpg = r'C:\Users\Desktop\Python projects\Esty_Done_Clean'
     doc5.saveAs(jpg, options, True)
     app.doJavaScript(f'alert("save to jpg: {jpg}")')
     change_image = Image.open("11-Nook-11x14 copy.jpg")
     change_image.save(rf'Done\Product{i - 12}\final_3.jpg')
 
     ################################################### Frame 4 ##########################################
-    app.load(r'C:\Users\Haidar\Desktop\Mockups that we like\Templates\PSD\12-Nook-11x14.psd')
-    app.load(rf'C:\Users\Haidar\Desktop\Original_images\Poster-{i}.jpg')  # Will open up picture in photoshop
+    app.load(r'C:\Users\Desktop\Mockups that we like\Templates\PSD\12-Nook-11x14.psd')
+    app.load(rf'C:\Users\Desktop\Original_images\Poster-{i}.jpg')  # Will open up picture in photoshop
     doc4 = app.Application.ActiveDocument  # Make sure this tab is the active tab
     # doc.ResizeImage(1052,1447,72)
     doc4.ResizeImage(1062, 1484, 300)
     layer_image = doc4.ArtLayers['Background']  # Select background layer
     layer_image.Copy()  # Copy
-    app.load(r'C:\Users\Haidar\AppData\Local\Temp\Rectangle 14.psb')  # Open up frame
+    app.load(r'C:\Users\AppData\Local\Temp\Rectangle 14.psb')  # Open up frame
     doc5 = app.Application.ActiveDocument
     doc5.Paste()
     # pasting onto the template
     pyautogui.hotkey('ctrl', 's')
-    app.load(r'C:\Users\Haidar\Desktop\Mockups that we like\Templates\PSD\12-Nook-11x14.psd')
+    app.load(r'C:\Users\Desktop\Mockups that we like\Templates\PSD\12-Nook-11x14.psd')
 
     options = ps.JPEGSaveOptions(quality=5)
     # # save to jpg
-    jpg = r'C:\Users\Haidar\Desktop\Python projects\Esty_Done_Clean'
+    jpg = r'C:\Users\Desktop\Python projects\Esty_Done_Clean'
     doc5.saveAs(jpg, options, True)
     app.doJavaScript(f'alert("save to jpg: {jpg}")')
     change_image = Image.open("11-Nook-11x14 copy.jpg")
     change_image.save(rf'Done\Product{i - 12}\final_4.jpg')
 
     #################################################### Frame 5 ##########################################
-    app.load(r'C:\Users\Haidar\Desktop\Mockups that we like\Templates\PSD\13-Nook-11x14.psd')
-    app.load(rf'C:\Users\Haidar\Desktop\Original_images\Poster-{i}.jpg')  # Will open up picture in photoshop
+    app.load(r'C:\Users\Desktop\Mockups that we like\Templates\PSD\13-Nook-11x14.psd')
+    app.load(rf'C:\Users\Desktop\Original_images\Poster-{i}.jpg')  # Will open up picture in photoshop
     doc4 = app.Application.ActiveDocument  # Make sure this tab is the active tab
     # doc.ResizeImage(1052,1447,72)
     doc4.ResizeImage(852, 1192, 300)
     layer_image = doc4.ArtLayers['Background']  # Select background layer
     layer_image.Copy()  # Copy
-    app.load(r'C:\Users\Haidar\AppData\Local\Temp\Rectangle 13.psb')  # Open up frame
+    app.load(r'C:\Users\AppData\Local\Temp\Rectangle 13.psb')  # Open up frame
     doc5 = app.Application.ActiveDocument
     doc5.Paste()
     # pasting onto the template
     pyautogui.hotkey('ctrl', 's')
-    app.load(r'C:\Users\Haidar\Desktop\Mockups that we like\Templates\PSD\13-Nook-11x14.psd')
+    app.load(r'C:\Users\Desktop\Mockups that we like\Templates\PSD\13-Nook-11x14.psd')
 
     options = ps.JPEGSaveOptions(quality=5)
     # # save to jpg
-    jpg = r'C:\Users\Haidar\Desktop\Python projects\Esty_Done_Clean'
+    jpg = r'C:\Users\Desktop\Python projects\Esty_Done_Clean'
     doc5.saveAs(jpg, options, True)
     app.doJavaScript(f'alert("save to jpg: {jpg}")')
     change_image = Image.open("13-Nook-11x14 copy.jpg")
